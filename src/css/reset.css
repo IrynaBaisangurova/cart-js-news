@@ -1,0 +1,39 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+p:last-child {
+  margin-bottom: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul,
+ol {
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+address {
+  font-style: normal;
+  color: inherit;
+}
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+button {
+  font-family: inherit;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}

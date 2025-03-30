@@ -1,0 +1,75 @@
+[
+    {
+        "id": 1,
+        "name": "Яйця інкубаційні Фавероль",
+        "price": 60,
+        "unit": "шт",
+        "desc": "Кількість обмежена",
+        "image": "img/1eggs-faverol.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Яйця інкубаційні Маран",
+        "price": 60,
+        "unit": "шт",
+        "desc": "Кількість обмежена",
+        "image": "img/2maran-eggs.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Яйця інкубаційні Амераукан",
+        "price": 70,
+        "unit": "шт",
+        "desc": "Кількість обмежена",
+        "image": "img/3ameraukan.jpg"
+    }
+    ,
+    {
+        "id": 4,
+        "name": "Яйця інкубаційні Ухейілюй",
+        "price": 70,
+        "unit": "шт",
+        "desc": "Кількість обмежена",
+        "image": "img/4uheilui.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Яйця перепілки",
+        "price": 5,
+        "unit": "шт", 
+        "desc": "В наявності",
+        "image": "img/5quail-eggs.jpg"
+    },
+    {
+        "id": 6,
+        "name": "М'ясо перепілки",
+        "price": 250,
+        "unit": "кг",
+        "desc": "В наявності",
+        "image": "img/6quail.jpg"
+    },
+    {
+        "id": 7,
+        "name": "М'ясо бойлера",
+        "price": 0,
+        "unit": "кг",
+        "desc": "Очікується",
+        "image": "img/7chicken.jpg"
+    },
+    {
+        "id": 8,
+        "name": "М'ясо індика",
+        "price": 0,
+        "unit": "кг",
+        "desc": "Очікується",
+        "image": "img/8turk.jpg"
+    },
+    {
+        "id": 9,
+        "name": "М'ясо вутки",
+        "price": 0,
+        "unit": "кг",
+        "desc": "Очікується",
+        "image": "img/9duck.jpg"
+    }
+]

@@ -1,0 +1,41 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  line-height: 24px;
+  font-size: 16px;
+  font-weight: 400;
+  min-height: 100vh;
+  color: var(--dark);
+  letter-spacing: 0.02em;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --first-family: "Montserrat", sans-serif;
+  --second-family: "Manrope", sans-serif;
+}
+
+:root {
+  --primary: red;
+  --lightgrey: #fafafa;
+  --grey: #999;
+  --dark: #2f4960;
+  --blue: #a5d0fd;
+  --white: #fff;
+  --navy-blue: #01cbcb;
+  --pink: #e88572;
+  --blue-light: #aae0e0;
+  --green: #8ab3a5;
+  --bg: #e2f4f4;
+  --bg-acc: #03b5d2;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
