@@ -9,27 +9,13 @@ a{
 .section {
     padding: 200px 0;
 } */
-.block-title{
-  background: linear-gradient(34deg, #01cbcb 0%, #6ccece 91.92%);
-  border-radius: 12px;
-  height: 100px;
-  width: 100%;
-  margin-top: 50px;
-}
-.block-title img {
-  display: none;
-}
 
-.title-products  {
-  text-align: center;
-  font-size: 20px;
-  font-weight: 500;
-  color: #2f4960;
-}
+
 .title-products {
   font-size: 24px;
   font-weight: 500;
   padding-bottom: 44px;
+  color: #2f4960;
 }  
 .listProduct {
     display: grid;
