@@ -220,7 +220,7 @@
 .swiper-button-next-2 {
    position: absolute; 
   margin-top: 51px;
-  /* margin-left: 55px; */
+  margin-left: 55px;
   right: 10px;
 }
 .swiper-slide.about {
@@ -257,11 +257,11 @@
 }
 @media screen and (min-width: 1440px) {
   .container {
-    max-width: 1240px;
+    max-width: 1140px;
     padding: 0 40px;
   }
   .swiper-about {
-    width: 1200px;
+    width: 1000px;
     height: 200px;
   }
   .swiper-slide.about {

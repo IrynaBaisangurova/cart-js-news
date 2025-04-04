@@ -1,8 +1,8 @@
 // core version + navigation, pagination modules:
-import Swiper from 'swiper/bundle';
+// import Swiper from 'swiper/bundle';
 
 // import styles bundle
-import 'swiper/css/bundle';
+// import 'swiper/css/bundle';
 
 
 document.addEventListener('DOMContentLoaded', () => {

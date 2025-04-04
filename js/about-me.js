@@ -26,43 +26,104 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-import Swiper from 'swiper';
-import 'swiper/css';
-import { Navigation, Pagination } from 'swiper/modules';
-import 'swiper/css/navigation';
+// import Swiper from 'swiper';
+// import 'swiper/css';
+// import { Navigation, Pagination } from 'swiper/modules';
+// import 'swiper/css/navigation';
 
+
+// document.addEventListener('DOMContentLoaded', () => {
+//   const swiper = new Swiper('.swiper-about', {
+//     slidesPerView: 2,
+//     modules: [Navigation, Pagination],
+//     navigation: {
+//       nextEl: '.swiper-button-next-2',
+//     },
+//     loop: true,
+//     watchOverflow: false,
+//     pagination: {
+//       el: '.swiper-pagination',
+//       clickable: true,
+//     },
+//     keyboard: {
+//       enabled: true,
+//       onlyInViewport: true,
+//     },
+//     mousewheel: true,
+
+//     loopFillGroupWithBlank: true,
+//     breakpoints: {
+//       640: {
+//         slidesPerView: 3,
+//       },
+
+//       768: {
+//         slidesPerView: 3,
+//       },
+
+//       1440: {
+//         slidesPerView: 4,
+//       },
+//     },
+//   });
+
+
+
+// });
 document.addEventListener('DOMContentLoaded', () => {
-  const swiper = new Swiper('.swiper-about', {
-    slidesPerView: 2,
-    modules: [Navigation, Pagination],
-    navigation: {
-      nextEl: '.swiper-button-next-2',
-    },
-    loop: true,
+
+  const prevButton = document.querySelector('.button-prev');
+  const nextButton = document.querySelector('.button-next');
+
+  let swiper
+
+  function updateButtonsState() {
+      
+    if (!swiper) return;
+
+    if (swiper.isBeginning) {
+      prevButton.setAttribute('disabled', 'true');
+    } else {
+      prevButton.removeAttribute('disabled');
+    }
+
+    if (swiper.isEnd) {
+      nextButton.setAttribute('disabled', 'true');
+    } else {
+      nextButton.removeAttribute('disabled');
+    }
+  }
+
+  swiper = new Swiper('.swiper-about', {
     watchOverflow: false,
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
+    loop: true,
+    direction: 'horizontal',
+    simulateTouch: true,
+    grabCursor: true,
+    slidesPerView: 2,
+    speed: 1000,
     keyboard: {
       enabled: true,
       onlyInViewport: true,
     },
-    mousewheel: true,
-
-    loopFillGroupWithBlank: true,
-    breakpoints: {
-      640: {
-        slidesPerView: 3,
-      },
-
-      768: {
-        slidesPerView: 3,
-      },
-
-      1440: {
-        slidesPerView: 4,
-      },
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false
     },
+    navigation: {
+      nextEl: '.swiper-button-next-2',
+    
+    },
+    on: {
+      slideChange: updateButtonsState,
+      init: updateButtonsState,
+    },
+    breakpoints: {
+      768: { slidesPerView: 2 },
+      1200: { slidesPerView: 3 },
+      1440: { slidesPerView: 4 },
+},
   });
 });
+
+

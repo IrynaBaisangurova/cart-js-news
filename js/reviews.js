@@ -1,9 +1,9 @@
 
-import Swiper from 'swiper/bundle';
+// import Swiper from 'swiper/bundle';
 
 // import styles bundle
-import 'swiper/css/bundle';
-
+// import 'swiper/css/bundle';
+// import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -44,10 +44,10 @@ document.addEventListener('DOMContentLoaded', () => {
       enabled: true,
       onlyInViewport: true,
     },
-    // autoplay: {
-    //   delay: 5000,
-    //   disableOnInteraction: false
-    // },
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false
+    },
     navigation: {
       nextEl: '.button-next',
       prevEl: '.button-prev',
@@ -60,6 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
           768: { slidesPerView: 2 },
           1200: { slidesPerView: 3 },
           1440: { slidesPerView: 4 },
-        },
+    },
   });
 });
+
