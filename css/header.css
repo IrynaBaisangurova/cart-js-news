@@ -191,7 +191,7 @@ header .totalQuantity{
 
 
 @media screen and (max-width: 1258px) {
- 
+
   header .nav-menu {
     position: absolute;
     top: 100%;
@@ -203,6 +203,7 @@ header .totalQuantity{
   }
   header .nav-menu .menu-list .menu-items {
     width: 100%;
+
   }
   header .nav-menu .menu-list .menu-items .menu-list-down {
     position: relative;
