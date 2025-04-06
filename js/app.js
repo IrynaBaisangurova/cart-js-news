@@ -34,22 +34,26 @@ function addDataToHTML(){
     listProductHTML.innerHTML = '';
 
     // add new datas
-    if(products != null) // if has data
-    {
+    if (products != null) {
         products.forEach(product => {
             let newProduct = document.createElement('div');
             newProduct.classList.add('item');
+    
+            // Якщо продукт "Очікується", то кнопка неактивна
+            const isButtonDisabled = product.desc === "Очікується";
+            const disabledAttr = isButtonDisabled ? 'disabled' : '';
+    
             newProduct.innerHTML = 
             `<img src="${product.image}" alt="${product.image}">
             <h2>${product.name}</h2>
-             <div class="desc">${product.desc}</div>
+            <div class="desc">${product.desc}</div>
             <div class="price">₴${product.price}  / 1 ${product.unit}</div>
-            <button onclick="addCart(${product.id})">Додати до кошика</button>`;
-
+            <button onclick="addCart(${product.id})" ${disabledAttr}>Додати до кошика</button>`;
+    
             listProductHTML.appendChild(newProduct);
-
         });
     }
+
 }
 //use cookie so the cart doesn't get lost on refresh page
 
@@ -81,6 +85,18 @@ function addCart($idProduct){
     document.cookie = "listCart=" + JSON.stringify(listCart) + "; expires=Thu, 31 Dec 2025 23:59:59 UTC; path=/;";
 
     addCartToHTML();
+
+    cart.style.right = '0';
+    container.style.transform = 'translateX(-400px)';
+    function showNotification() {
+        const notify = document.getElementById('cartNotification');
+        notify.classList.add('show');
+        setTimeout(() => {
+            notify.classList.remove('show');
+        }, 2000);
+    }
+    showNotification();
+
 }
 addCartToHTML();
 function addCartToHTML(){

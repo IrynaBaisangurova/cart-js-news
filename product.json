@@ -63,13 +63,6 @@
         "unit": "кг",
         "desc": "Очікується",
         "image": "img/8turk.jpg"
-    },
-    {
-        "id": 9,
-        "name": "М'ясо вутки",
-        "price": 0,
-        "unit": "кг",
-        "desc": "Очікується",
-        "image": "img/9duck.jpg"
     }
+ 
 ]

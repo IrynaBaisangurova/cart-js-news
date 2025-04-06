@@ -16,6 +16,15 @@
       background-size: contain;
     }
 }
+.footer-container {
+  max-width: 375px;
+  padding: 0 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
 .container-footer {
   display: flex;
   flex-direction: column;
@@ -190,8 +199,11 @@ footer .logo .logo-link {
   .footer {
     padding: 90px 0;
   }
+  .footer-container {
+    max-width: 1440px;
+    padding: 0 150px;
+  }
   .container-footer {
-   
     flex-direction: row;
     align-items: start;
     justify-content: space-around;

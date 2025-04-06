@@ -9,12 +9,39 @@ a{
 .section {
     padding: 200px 0;
 } */
+.notification {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #e88572;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  opacity: 0;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  transform: translateY(-20px);
+  z-index: 999;
+}
 
+.notification.show {
+  opacity: 1;
+  transform: translateY(0);
+}
 
+.block-title {
+  width: 100%;
+  background-color: #01cbcb;
+  text-align: center;
+  padding-top: 26px;
+  padding-bottom: 26px;
+  border-radius: 22px;
+  margin-top: 60px;
+  margin-bottom: 10px;
+}
 .title-products {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 500;
-  padding-bottom: 44px;
   color: #2f4960;
 }  
 .listProduct {
@@ -253,7 +280,6 @@ a{
     .title-products {
         font-size: 34px;
         font-weight: 600;
-        padding-bottom: 54px;
     } 
     .listProduct .item button {
         width: 60%;
@@ -335,11 +361,15 @@ a{
   /* header-product img{
     width: 90px;
 } */
-
+  .block-title {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: auto;
+    margin-bottom: 24px;
+  }
   .title-products {
     font-size: 36px;
     font-weight: 500;
-    padding-bottom: 32px;
   }
   .listProduct {
     display: grid;
@@ -392,7 +422,7 @@ a{
     left: 50%;
     background-color: #01cbcb;
     color: #fff;
-    width: 50%;
+    width: 70%;
     border: none;
     padding: 20px 30px;
     box-shadow: 0 10px 50px #2f4960;
