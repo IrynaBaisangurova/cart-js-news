@@ -190,7 +190,6 @@ header .totalQuantity{
 }
 .prod-info {
   line-height: 100%;
-  width: 110px;
 }
 .prod-info::after {
   content: "за сезоном";
@@ -200,7 +199,6 @@ header .totalQuantity{
 }
 
 @media screen and (max-width: 1258px) {
-
   header .nav-menu {
     position: absolute;
     top: 100%;
