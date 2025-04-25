@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0 40px;
+  padding: 0 20px;
 }
 
 .block-text {
@@ -14,7 +14,6 @@
   width: 100%;
   margin-bottom: 32px;
 }
-
 
 .sub-mod {
   float: left;
@@ -103,12 +102,11 @@
   margin-top: 46px;
   flex-direction: row;
 }
-
-#mod {
-  padding-bottom: 64px;
+.swiper-buttons {
+  width: 190px;
 }
 
-.mod-section {
+ .mod-section {
   overflow: hidden;
   background-color: var(--lightgrey);
 }
@@ -126,8 +124,6 @@
   position: relative;
   padding: 20px 0;
 }
-
-/* .mod-item::before,  */
 .mod-item::after {
   content: '';
   position: absolute;
@@ -209,17 +205,57 @@
 .buttons-module {
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 12px;
   justify-content: center;
-  padding: 0 32px;
+  align-items: center;
+}
+.mod-btn-one {
+  min-width: 230px;
+  padding: 22px 20px;
   margin-bottom: 0;
-  text-align: center;
+}
+.mod-btn {
+  min-width: 220px;
+  color: var(--dark);
+  background-color: var(--lightgrey);
+  border: 2px solid var(--navy-blue);
+  padding: 18px 22px;
+}
+.mod-btn:hover,
+.mod-btn:focus {
+  color: var(--lightgrey);
+  background-color: var(--bg-acc);
+  border: none;
+}
+.number-mod {
+  color: black;
+  font-weight: 500;
+  font-size: 20px;
+}
+.swiper-buttons {
+  max-width: 320px;
+  height: 94px;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+li.swiper-slide.buttons {
+   padding: 0;
+   margin: 0;
+   max-height: 120px;
 }
 @media (min-width: 667px) and (max-width: 767px) {
   .buttons-module {
     display: flex;
     flex-direction: row;
     gap: 10px;
+  }
+  .swiper-buttons.mod-btn-two {
+    max-width: 300px;
+    height: 64px;
+  }
+  .networks-list {
+    margin-left: 24px;
   }
 
 }
@@ -259,10 +295,17 @@
     padding-bottom: 96px;
   }
   .buttons-module {
+    max-width: 700px;
+    height: 180px;
     display: flex;
     flex-direction: row;
     gap: 16px;
     justify-content: center;
+    align-items: last baseline;
+    margin: 0 auto;
+  }
+  .swiper-buttons.mod-btn-two {
+    width: 280px;
   }
 }
 
@@ -332,11 +375,41 @@
         padding-bottom: 164px;
     } */
   .buttons-module {
+    max-width: 700px;
+    height: 180px;
     display: flex;
     flex-direction: row;
     gap: 16px;
     justify-content: center;
+    align-items: last baseline;
+    margin: 0 auto;
   }
+  .mod-btn {
+    color: var(--dark);
+    background-color: var(--lightgrey);
+    border: 2px solid var(--navy-blue);
+  }
+  .mod-btn:hover,
+  .mod-btn:focus {
+    color: var(--lightgrey);
+    background-color: var(--bg-acc);
+    border: none;
+  }
+  .number-mod {
+    color: black;
+    font-weight: 500;
+    font-size: 20px;
+  }
+  .swiper-buttons {
+    max-width: 300px;
+    height: 94px;
+    width: 70%;
+    padding: 0;
+  }
+  /* li.swiper-slide.buttons {
+     padding: 0;
+     margin: 0;
+  } */
 }
 @keyframes fadeIn {
   from {

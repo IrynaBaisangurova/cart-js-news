@@ -1,5 +1,3 @@
-// import Accordion from "accordion-js";
-
 
 const accordion = new Accordion('.mod-list', {
   duration: 500,

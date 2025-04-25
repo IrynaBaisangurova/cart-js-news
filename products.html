@@ -8,7 +8,8 @@
     <meta name="description" content="онлайн-навчання розведення свійської птиці в умовах приватного подвір'я">
     <meta name="keywords" content="бройлер, перепілка, індик, інкубація, онлайн-навчання">
     <title>онлайн-школа</title>
-    <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="stylesheet" href="./css/container.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/base.css">
@@ -50,14 +51,11 @@
               Курси
             </a>
           </li>
-          </li>
           <li class="menu-items">
-            <a class="menu-link" href="./products.html">
+            <a class="menu-link prod-info" href="./products.html">
               Продукція
             </a>
           </li>
-          </li>
-
           <li class="menu-items">
             <a class="menu-link" href="./index.html#reviews">
               Відгуки
@@ -86,9 +84,10 @@
         </ul>
       </nav>
       <div class="iconCart">
-        <img class="icon-cart" src="./img/icon.png"  alt="icon-cart" width="64px">
+        <img class="icon-cart" src="./img/icon.png"  alt="icon-cart" width="64">
         <div class="totalQuantity">0</div>
       </div>
+
     </header>
     <div class="notification" id="cartNotification">Товар додано до кошика!</div>
 
@@ -96,7 +95,7 @@
       <section class="section section-products" id="product">
     <div class="container">
       <div class="block-title">
-      <h1 class="title-products">ПЕРЕЛІК ПРОДУКЦІЇ</h1>
+      <h1 class="title-products">  перелік <i class="text-bold">сезонної</i> продукції</h1>
       </div>
       <div class="listProduct">
         <div class="item">
@@ -133,8 +132,8 @@
         </div>
       </div>
     </div>
-      </section>
-      <section class="section section-form">
+  </section>
+  <section class="section section-form">
     <div class="container-form">
     <span class="big-circle"></span>
     <img src="img/shape.png" class="square" alt="" />
@@ -147,16 +146,18 @@
 
         <div class="info">
           <div class="information">
-            <img src="./img/location.png" class="icon" alt="" />
+            <img src="./img/location.png" class="icon" alt="icon" />
             <p>Харківська область</p>
           </div>
           <div class="information">
-            <img src="./img/email.png" class="icon" alt="" />
-            <p>cherkashinatanya73@gmail.com</p>
+            <img src="./img/email.png" class="icon" alt="icon" />
+            <!-- <p>cherkashinatanya73@gmail.com</p> -->
+            <a class="networks-link" href="mailto:cherkashinatanya73@gmail.com">cherkashinatanya73@gmail.com</a>
           </div>
           <div class="information">
-            <img src="./img/phone.png" class="icon" alt="" />
-            <p>+380 639 48 97 39</p>
+            <img src="./img/phone.png" class="icon" alt="icon" />
+            <!-- <p>+380 639 48 97 39</p> -->
+            <a href="tel:+380639489739">+380 639 48 97 39</a>
           </div>
         </div>
 
@@ -193,10 +194,12 @@
       </div>
 
       <div class="contact-form">
-        <span class="circle one"></span>
-        <span class="circle two"></span>
+        <!-- <span class="circle one"></span>
+        <span class="circle two"></span> -->
+          
+       <img src="./img/bg-paym.jpg" alt="" width="610" height="642">
 
-          <form action="send_mail.php" name="form" method="POST">
+          <!-- <form action="send_mail.php" name="form" method="POST">
           <h3 class="title">Напишить</h3>
           <div class="input-container">
             <input type="text" name="name" placeholder="Іван" class="input" id="name" data-reg="^[А-Я][а-я]*$"/>
@@ -224,13 +227,13 @@
             <span>Повідомлення</span>
           </div>
           <input type="submit" id="button" value="Надіслати" class="btn" />
-        </form>
+          </form>  -->
       </div>
     </div>
     </div>
-      </section>
-    </main>
-    <footer class="footer">
+  </section>
+  </main>
+  <footer class="footer">
       <div class="container">
         <div class="container-footer">
           <div class="footer-first">

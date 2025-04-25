@@ -95,6 +95,13 @@ a{
     opacity: 1;
     transform: translateX(-50%) translateY(0);
   }
+  .listProduct .item button:disabled {
+    background-color: #dcdcdc;
+    color: #2f4960;
+  }
+  .text-bold {
+    font-weight: 900;
+  }
   /* ===== КОШИК ==== */
   .cart {
     color: #fff;

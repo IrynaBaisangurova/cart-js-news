@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
 
 * {
   margin: 0;
@@ -9,7 +8,7 @@
 body,
 input,
 textarea {
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .container-form {
@@ -39,15 +38,16 @@ textarea {
 .contact-form {
   background-color: #01cbcb;
   position: relative;
+  padding: 1.3rem 1.2rem;
 }
 
 .circle {
   border-radius: 50%;
-  background: linear-gradient(135deg, transparent 20%, #01cbcb);
+  background: linear-gradient(135deg, transparent 20%, #fafafa);
   position: absolute;
 }
 
-.circle.one {
+/* .circle.one {
   width: 130px;
   height: 130px;
   top: 130px;
@@ -59,7 +59,7 @@ textarea {
   height: 80px;
   top: 10px;
   right: 30px;
-}
+} */
 
 .contact-form:before {
   content: "";
@@ -73,7 +73,7 @@ textarea {
 }
 
 form {
-  padding: 2.3rem 2.2rem;
+  
   z-index: 1;
   overflow: hidden;
   position: relative;
@@ -172,7 +172,7 @@ textarea.input {
   opacity: 0;
   transition: 0.3s;
   height: 5px;
-  background-color: #01cbcb;
+  background-color: var(#fafafa);
   top: 50%;
   transform: translateY(-50%);
 }

@@ -246,10 +246,20 @@ header .totalQuantity{
     color: var(--dark);
     font-size: 16px;
   }
-  .container {
+  /* .container {
     max-width: 1158px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
+  } */
+  .prod-info {
+    line-height: 100%;
+    width: 110px;
+  }
+  .prod-info::after {
+    content: "за сезоном";
+    font-size: 12px;
+    line-height: 100%;
+    text-align: center;
   }
 }

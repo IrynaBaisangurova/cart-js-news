@@ -1,11 +1,4 @@
 
-// import Swiper from 'swiper/bundle';
-
-// import styles bundle
-// import 'swiper/css/bundle';
-// import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
-
-
 document.addEventListener('DOMContentLoaded', () => {
 
   const prevButton = document.querySelector('.button-prev');

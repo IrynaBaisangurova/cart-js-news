@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', () => {
 
   const prevButton = document.querySelector('.button-prev');
@@ -23,20 +22,19 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  swiper = new Swiper('.swiper-hero', {
-    watchOverflow: false,
-    loop: true,
-    direction: 'horizontal',
-    simulateTouch: true,
-    grabCursor: true,
-    slidesPerView: 1,
-    speed: 1000,
-    keyboard: {
-      enabled: true,
-      onlyInViewport: true,
-    },
+  swiper = new Swiper('.swiper-buttons', {
+      spaceBetween: 30,
+      effect: "fade",
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
     autoplay: {
-      delay: 5000,
+      delay: 3000,
       disableOnInteraction: false
     },
     navigation: {
@@ -47,8 +45,12 @@ document.addEventListener('DOMContentLoaded', () => {
       slideChange: updateButtonsState,
       init: updateButtonsState,
     },
+    breakpoints: {
+      768: { slidesPerView: 1 },
+      1200: { slidesPerView: 1 },
+      1440: { slidesPerView: 1 },
+    },
   });
 });
-
 
 

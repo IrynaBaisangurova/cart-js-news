@@ -61,8 +61,8 @@
 }
 
 .courses-text {
-  margin-bottom: 34px;
-  min-height: 370px;
+  margin-bottom: 24px;
+  min-height: 385px;
 }
 
 .courses-btn {
@@ -73,7 +73,6 @@
   background-color: var(--bg-acc);
   letter-spacing: -0.02em;
   color: var(--lightgrey);
-  margin-bottom: 22px;
   display: inline-block;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -87,7 +86,9 @@
   background-color: var(--bg-acc);
   padding: 20px 14px;
 }
-
+ .btn-block {
+    margin-bottom: 22px; 
+  }
 .btn-arrow  {
   display: none;
   /* display: flex;
@@ -114,13 +115,18 @@
 .add-font {
   font-size: 14px;
 }
-@media (min-width: 377px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 374px) {
+  .courses-text {
+    min-height: 440px;
+  }
+}
+@media (min-width: 540px) and (max-width: 767px) {
   .courses-info {
     padding: 36px 26px;
   }
   .courses-text {
     margin-bottom: 24px;
-    min-height: 386px;
+    min-height: 280px;
   }
   .courses-subtitle {
     font-size: 18px;
@@ -130,19 +136,17 @@
     font-size: 28px;
     line-height: 34px;
   }
-  .btn-block {
-    width: 250px;
-  }
+ 
  
 }
 @media screen and (min-width: 768px) {
   .courses-info {
     padding: 42px;
-    width: 80%;
+    width: 100%;
   }
   .courses-text {
     margin-bottom: 44px;
-    min-height: 250px;
+    min-height: 196px;
   }
   .courses-image {
     padding: 30px 24px;
@@ -150,23 +154,13 @@
   .courses-subtitle {
     font-size: 22px;
   }
-
 }
 
-
-@media screen and (min-width: 1158px) {
-
-  .container-courses {
-    max-width: 1158px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;
-  }
-
+@media screen and (min-width: 1440px) {
   .courses-info {
     padding: 32px;
     border-radius: 24px 24px 0 0;
-   
+    width: 50%;
   }
   .courses-subtitle {
     margin-bottom: 32px;
@@ -184,7 +178,7 @@
   }
   .sub-course {
     padding-left: 44px;
-    width: 90%;
+    width: 100%;
     }
 
   .courses-text {
@@ -207,3 +201,214 @@
 
 }
 
+/* books */
+
+.books-info {
+  width: 100%; 
+  padding: 50px 10px;
+  border-radius: 24px 24px 0 0;
+}
+.books-content{
+  min-height: 670px;
+  margin-bottom: 24px;
+}
+.books-image {
+  width: 100%;
+  border-radius: 0 0 24px 24px;
+  background-color: var(--pink);
+  padding: 34px 20px;
+}
+
+.books-pink {
+  border-top: 1px solid var(--pink);
+}
+.books-list {
+  list-style-type: square;
+  text-align: left;
+  padding-left: 12px;
+}
+li::marker {
+  color: var(--pink);
+}
+.books-title {
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 600;
+  text-align: left;
+  margin-bottom: 24px;
+  color: var(--dark);
+}
+ 
+.btn-pink {
+  background-color: var(--pink);
+  /* margin-top: 24px; */
+}
+.btn-pink:hover {
+  background-color: var(--lightgrey);
+  border: 2px solid var(--pink);
+  color: var(--dark);
+}
+.image-text {
+  min-height: 174px;
+}
+.text-bold {
+  font-weight: 600;
+  margin-top: 24px;
+}
+
+.text-color {
+  color: var(--lightgrey);
+}
+
+@media (min-width: 320px) and (max-width: 359px) {
+  .books-content{
+    min-height: 800px;
+    margin-bottom: 24px;
+  }
+  .image-text {
+    min-height: 194px;
+  }
+
+}
+@media (min-width: 360px) and (max-width: 374px) {
+  .courses-text {
+    min-height: 400px;
+  }
+  .books-content{
+    min-height: 700px;
+    margin-bottom: 24px;
+  }
+  .image-text {
+    min-height: 174px;
+  }
+
+}
+@media (min-width: 540px) and (max-width: 767px) {
+ 
+  .books-info {
+    padding: 36px 26px;
+  }
+  .books-content {
+    margin-bottom: 24px;
+    min-height: 530px;
+  }
+  .courses-subtitle {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .books-title {
+    font-size: 28px;
+    line-height: 34px;
+  }
+  .image-text {
+    min-height: 110px;
+  }
+  /* .btn-block {
+    width: 250px;
+  } */
+ 
+}
+@media screen and (min-width: 768px) {
+  /* .container-books {
+    max-width: 768px;
+    padding: 0 32px;
+  } */
+  .books-info {
+    width: 100%;
+    padding: 50px 30px;
+    border-radius: 24px 24px 0 0;
+  }
+  .books-content {
+    min-height: 430px;
+  }
+  .books-image {
+    width: 100%;
+    border-radius: 0 0 24px 24px;
+    background-color: var(--pink);
+    padding: 50px 30px;
+  }
+
+  .books-text {
+    margin-bottom: 12px;
+    padding-right: 30px;
+  }
+
+  .courses-subtitle {
+    font-size: 28px;
+  }
+  .add-subtitle {
+    font-size: 12px;
+  }
+  .books-title {
+    font-size: 32px;
+    line-height: 36px;
+    font-weight: 600;
+    text-align: left;
+    margin-bottom: 32px;
+  }
+  .books-text {
+    font-size: 18px;
+    margin-bottom: 14px;
+  }
+  .books-list {
+    margin-bottom: 14px;
+  }
+  .text-bold {
+    font-weight: 600;
+    margin-top: 24px;
+  }
+
+  .text-color {
+    color: var(--lightgrey);
+  }
+  .image-text {
+    min-height: 134px;
+  }
+
+}
+@media screen and (min-width: 1440px) {
+  .container-books {
+    max-width: 1300px;
+  }
+  .books-info {
+    width: 50%;
+    padding: 32px;
+    border-radius: 24px 24px 0 0;
+  }
+  .books-image {
+    width: 50%;
+    border-radius: 0 0 24px 24px;
+    background-color: var(--pink);
+    padding: 50px 24px;
+  }
+  .books-content{
+    min-height: 436px;
+    margin-bottom: 34px;
+  }
+  .books-title {
+    font-size: 32px;
+    line-height: 42px;
+    font-weight: 600;
+    text-align: left;
+    margin-bottom: 32px;
+  }
+  .books-text {
+    font-size: 18px;
+    margin-bottom: 14px;
+  }
+  .books-list {
+    margin-bottom: 14px;
+  }
+  .text-bold {
+    font-weight: 600;
+    margin-top: 24px;
+  }
+
+  .text-color {
+    color: var(--lightgrey);
+  }
+  .image-text  {
+    min-height: 70px;
+    margin-bottom: 50px;
+  }
+}

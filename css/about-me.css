@@ -10,7 +10,7 @@
   padding-bottom: 32px;
 }
 
-.orange-word {
+.color-word {
   color: var(--navy-blue);
 }
 .gray-word {
@@ -18,10 +18,10 @@
 }
 
 .intro-box {
-  border-radius: 26px;
+  border-radius: 32px;
   background-color: #1B1A16;
   padding: 32px 32px 0 32px;
-  height: 500px;
+  height: 250px;
 }
 
 .intro-text {
@@ -36,7 +36,7 @@
 
 }
 .about-img {
-  border-radius: 26px;
+  border-radius: 32px;
   display: block;
   width: 100%;
   height: 500px;
@@ -126,12 +126,19 @@
   padding-bottom: 10px;
 }
 
-@media screen and (max-width: 375px) {
+/* @media screen and (max-width: 375px) {
   .about-img {
     height: auto;
   }
+} */
+@media (min-width: 540px) and (max-width: 767px) {
+  .intro-box {
+    padding: 56px 56px 0 56px;
+    height: 300px;
+    width: 343px;
+    margin: 0 auto;
+  }
 }
-
 @media screen and (min-width: 768px) {
   .about-me-section {
     padding-bottom: 96px;
@@ -139,7 +146,7 @@
 
   .intro-box {
     padding: 64px 64px 0 64px;
-    min-height: 637px;
+    height: 400px;
   }
 
   .intro-text {
@@ -161,7 +168,10 @@
     flex-wrap: nowrap;
     padding-bottom: 96px;
   }
-
+  .intro-box {
+    padding: 64px 64px 0 64px;
+    height: 700px;
+  }
   .about-img {
     min-width: 680px;
   }
@@ -193,9 +203,8 @@
 .swiper-about {
   position: relative;
  overflow: hidden; 
-  /* overflow: visible;  */
   width: 280px;
-  height: 130px;
+  height: 190px;
 }
 .swiper-slide.about {
   display: flex;
@@ -220,7 +229,7 @@
 .swiper-button-next-2 {
    position: absolute; 
   margin-top: 51px;
-  margin-left: 55px;
+  /* margin-left: 55px; */
   right: 10px;
 }
 .swiper-slide.about {
@@ -234,6 +243,20 @@
 .arrow-next-about:hover {
   stroke: var(--bg-acc);
 
+}
+@media (min-width: 540px) and (max-width: 767px) {
+  
+  .swiper-about {
+    width: 440px;
+  }
+  .picture-about {
+    margin: 0 auto;
+  }
+  .about-img {
+    max-width: 680px;
+    margin: 0 auto;
+  }
+ 
 }
 @media screen and (min-width: 768px) {
   .swiper-about {
@@ -256,18 +279,15 @@
   }
 }
 @media screen and (min-width: 1440px) {
-  .container {
-    max-width: 1140px;
-    padding: 0 40px;
-  }
   .swiper-about {
-    width: 1000px;
+    width: 1200px;
     height: 200px;
   }
   .swiper-slide.about {
    padding: 0;
   }
   .swiper-about-container {
+    max-width: 1240px;
     padding: 0 32px;
   }
   .swiper-button-next-2 {
