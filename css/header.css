@@ -188,7 +188,16 @@ header .totalQuantity{
   transform: translateX(10px);
   cursor: pointer;
 }
-
+.prod-info {
+  line-height: 100%;
+  width: 110px;
+}
+.prod-info::after {
+  content: "за сезоном";
+  font-size: 12px;
+  line-height: 100%;
+  text-align: center;
+}
 
 @media screen and (max-width: 1258px) {
 
