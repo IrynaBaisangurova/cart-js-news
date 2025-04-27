@@ -188,15 +188,6 @@ header .totalQuantity{
   transform: translateX(10px);
   cursor: pointer;
 }
-.prod-info {
-  line-height: 100%;
-}
-.prod-info::after {
-  content: "за сезоном";
-  font-size: 12px;
-  line-height: 100%;
-  text-align: center;
-}
 
 @media screen and (max-width: 1258px) {
   header .nav-menu {
@@ -219,6 +210,7 @@ header .totalQuantity{
   header .nav-menu .menu-list .menu-items .menu-list-down .menu-items-down {
     background: var(--bg);
   }
+
   header
     .nav-menu
     .menu-list
@@ -253,20 +245,13 @@ header .totalQuantity{
     color: var(--dark);
     font-size: 16px;
   }
-  /* .container {
-    max-width: 1158px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;
-  } */
-  .prod-info {
-    line-height: 100%;
-    width: 110px;
+
+  header .nav-menu .menu-list .menu-items .menu-list-prod .prod-info-link {
+    background: var(--dark);
+    padding: 15px;
+    text-align: left;
   }
-  .prod-info::after {
-    content: "за сезоном";
-    font-size: 12px;
-    line-height: 100%;
-    text-align: center;
+  .prod-info {
+    color: var(--lightgrey);
   }
 }

@@ -280,7 +280,7 @@
 }
 @media screen and (min-width: 1440px) {
   .swiper-about {
-    width: 1200px;
+    width: 1000px;
     height: 200px;
   }
   .swiper-slide.about {
