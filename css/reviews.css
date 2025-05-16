@@ -111,7 +111,17 @@
   margin: 14px 0 40px;
   text-align: left;
 }
-
+.rev {
+  min-height: 24px;
+  margin: 7px 0;
+}
+.rev-two {
+  padding-bottom: 25px;
+}
+.rev-number {
+  color: var(--bg-acc);
+  font-weight: 600;
+}
 .arrow-prev use,
 .arrow-next use {
   width: 100%;
@@ -251,6 +261,10 @@
     color: var(--dark);
     min-height: 250px;
     margin: 16px 0 32px;
+  }
+  .rev {
+    min-height: 24px;
+    margin: 8px 0;
   }
   .swiper-button {
     display: flex;
