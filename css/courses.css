@@ -364,6 +364,7 @@ li::marker {
   }
 
 }
+
 @media screen and (min-width: 1440px) {
   .books-info {
     width: 50%;
