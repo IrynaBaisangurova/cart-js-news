@@ -7,7 +7,11 @@ import './js/buttons.js';
 
 
 
+document.getElementById('scrollToTop')?.addEventListener('click', function () {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
 
+document.getElementById('year').textContent = new Date().getFullYear();
 
 
 
