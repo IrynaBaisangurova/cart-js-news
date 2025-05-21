@@ -47,7 +47,7 @@
 
  .reviews-item {
   flex-shrink: 0;
-  min-height: 400px;
+  min-height: 420px;
   text-align: start;
   border: none;
   border-radius: 20px;
@@ -57,10 +57,6 @@
 }
 .swiper-button {
   display: none;
-  /* gap: 12px;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 32px; */
 }
 .button-prev,
 .button-next {
@@ -111,13 +107,13 @@
   margin: 14px 0 40px;
   text-align: left;
 }
-.rev {
+.reviews-books {
   min-height: 24px;
   margin: 12px 0;
 }
  .block-rev {
   min-height: 290px;
-  padding-bottom: 58px;
+  padding-bottom: 34px;
 }
 .rev-number {
   color: var(--bg-acc);
@@ -141,34 +137,37 @@
   top: 460px;
 } 
 @media (min-width: 320px) and (max-width: 359px) {
-
+  .reviews-item  {
+    min-height: 658px;
+  }
   .reviews-text {
-    min-height: 290px;
+    min-height: 338px;
   }
   .one {
     font-size: 18px;
   }
-  .rev {
+  .reviews-books {
     min-height: 24px;
     margin: 9px 0;
   }
- .block-rev {
-    min-height: 377px;
+ /* .block-rev {
+    min-height: 423px;
     padding-bottom: 0;
-  }
+  } */
 }
 @media (min-width: 360px) and (max-width: 374px) {
 
   .reviews-text {
     min-height: 266px;
   }
-  .rev {
+  .reviews-books {
     min-height: 24px;
     margin: 8px 0;
   }
   .block-rev {
-    padding-bottom: 50px;
-  }
+    padding-bottom: 0;
+  } 
+
 }
 @media (min-width: 540px) and (max-width: 767px) {
 
@@ -178,18 +177,17 @@
   .rev {
     min-height: 24px;
     margin: 8px 0;
-  }
-   .block-rev {
-    min-height: 256px;
+  }    
+  .block-rev {
+    min-height: 252px;
     padding-bottom: 0;
-  }
+  } 
 
 }
-@media screen and (min-width: 768px) {
+
+@media screen and (min-width: 768px)  {
   .reviews-section {
-    padding: 96px 0;
-  }
-  .reviews-section {
+    padding: 96px 0;  
     background-image: url(../img/reviews/bg-tab@1x.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -202,44 +200,24 @@
       background-size: cover;
     }
   }
-  .slider-wrapper {
-    max-width: 768px;
-  }
-  .title-reviews {
-    font-size: 28px;
-  }
-}
-@media (min-width: 769px) and (max-width: 1439px) {
-  .reviews-section {
-      background-image: url(../img/reviews/bg-tab@1x.jpg);
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      @media (min-resolution: 192dpi) {
-        background-image: 
-        url(../img/reviews/bg-tab@2x.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-      }
-    }
-  .reviews-container {
-    max-width: 1200px;
+  /* .reviews-container {
+    max-width: 1023px;
 
   }
   .slider-wrapper {
-    max-width: 1200px;
-  }
+    max-width: 1023px;
+  } */
   .reviews-list .swiper-wrapper {
     display: flex;
     flex-direction: row;
       /* flex-wrap: wrap; */
   }
   .reviews-item {
-    width: calc(100% / 3);
+    width: calc((100%-40px) / 2);
+    /* min-height: 584px; */
   }
   .reviews-text {
-    min-height: 170px;
+    min-height: 264px;
   }
   .button-prev,
   .button-next {
@@ -253,37 +231,36 @@
     margin-bottom: 0px;
   }
 
-}
-@media (min-width: 812px) and (max-width: 1023px) {
-  .reviews-item {
-    width: calc((100%-40px) / 2);  
-  }
-  .reviews-text {
-    min-height: 264px;
-  }
-  .rev {
+  .reviews-books {
     min-height: 24px;
     margin: 12px 0; 
   }
-  .block-rev {
-    min-height: 346px;
-    padding-bottom: 0;
-  }
 
 }
-@media (min-width: 1024px) and (max-width: 1439px) {
 
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .reviews-container {
+    max-width: 1366px;
+    padding: 0 84px;
+  }
+  .slider-wrapper {
+    max-width: 1366px;
+  }
+  .reviews-item {
+    width: calc((100%-40px) /3);
+    min-height: 584px;
+  }
   .reviews-text {
     min-height: 240px;
   }
-  .rev {
+  .reviews-books {
     min-height: 24px;
     margin: 12px 0; 
   }
-  .block-rev {
+  /* .block-rev {
     min-height: 320px;
     padding-bottom: 0;
-  }
+  } */
 }
 
 @media screen and (min-width: 1440px) {
@@ -333,7 +310,7 @@
     min-height: 332px;
     padding-bottom: 0;
   }
-  .rev {
+  .reviews-books {
     min-height: 24px;
     margin: 8px 0;
   }
