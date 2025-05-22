@@ -4,7 +4,9 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  @media (min-resolution: 192dpi) {
+ }
+@media (min-resolution: 192dpi) {
+  .reviews-section {
     padding: 64px 0;
     background-image: 
     url(../img/reviews/bg-mob@2x.jpg);
@@ -13,6 +15,7 @@
     background-size: cover;
   }
 }
+
 .reviews-container {
   display: flex;
   flex-direction: column;
@@ -150,10 +153,7 @@
     min-height: 24px;
     margin: 9px 0;
   }
- /* .block-rev {
-    min-height: 423px;
-    padding-bottom: 0;
-  } */
+
 }
 @media (min-width: 360px) and (max-width: 374px) {
 
@@ -192,7 +192,9 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    @media (min-resolution: 192dpi) {
+  }
+   @media (min-resolution: 192dpi) {
+    .reviews-section {
       background-image: 
       url(../img/reviews/bg-tab@2x.jpg);
       background-repeat: no-repeat;
@@ -200,21 +202,13 @@
       background-size: cover;
     }
   }
-  /* .reviews-container {
-    max-width: 1023px;
 
-  }
-  .slider-wrapper {
-    max-width: 1023px;
-  } */
   .reviews-list .swiper-wrapper {
     display: flex;
     flex-direction: row;
-      /* flex-wrap: wrap; */
   }
   .reviews-item {
-    width: calc((100%-40px) / 2);
-    /* min-height: 584px; */
+    width: calc((100% - 40px) / 2);
   }
   .reviews-text {
     min-height: 264px;
@@ -247,7 +241,7 @@
     max-width: 1366px;
   }
   .reviews-item {
-    width: calc((100%-40px) /3);
+    width: calc((100% - 40px) /3);
     min-height: 584px;
   }
   .reviews-text {
@@ -257,10 +251,7 @@
     min-height: 24px;
     margin: 12px 0; 
   }
-  /* .block-rev {
-    min-height: 320px;
-    padding-bottom: 0;
-  } */
+
 }
 
 @media screen and (min-width: 1440px) {
@@ -269,14 +260,15 @@
       max-width: 1440px;
       padding: 0 32px;
   }
-
   .reviews-section {
     padding: 100px 0;
     background-image: url(../img/reviews/bg@1x.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    @media (min-resolution: 192dpi) {
+  }
+  @media (min-resolution: 192dpi) {
+    .reviews-section {
       padding: 100px 0;
       background-image: 
       url(../img/reviews/bg@2x.jpg);
@@ -296,7 +288,7 @@
 
   }
   .reviews-item {
-    width: calc((100%-60px) / 4);  
+    width: calc((100% - 60px) / 4); 
   }
   .reviews-text {
     font-size: 16px;

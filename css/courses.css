@@ -90,14 +90,11 @@
   }
 .btn-arrow  {
   display: none;
-  /* display: flex;
-  flex-direction: row;
-  gap: 14px; */
 }
 .button-next.btn-course,
 .button-prev.btn-course  {
  background-color: var(--lightgrey);
- border-radius: none;
+ 
 }
 
 .btn-course .arrow-prev use,
@@ -242,7 +239,6 @@ li::marker {
  
 .btn-pink {
   background-color: var(--pink);
-  /* margin-top: 24px; */
 }
 .btn-pink:hover {
   background-color: var(--lightgrey);
@@ -304,9 +300,6 @@ li::marker {
   .image-text {
     min-height: 110px;
   }
-  /* .btn-block {
-    width: 250px;
-  } */
  
 }
 @media screen and (min-width: 768px) {

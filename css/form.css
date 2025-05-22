@@ -47,20 +47,6 @@ textarea {
   position: absolute;
 }
 
-/* .circle.one {
-  width: 130px;
-  height: 130px;
-  top: 130px;
-  right: -40px;
-}
-
-.circle.two {
-  width: 80px;
-  height: 80px;
-  top: 10px;
-  right: 30px;
-} */
-
 .contact-form:before {
   content: "";
   position: absolute;
@@ -172,7 +158,7 @@ textarea.input {
   opacity: 0;
   transition: 0.3s;
   height: 5px;
-  background-color: var(#fafafa);
+  background-color: var(--lightgrey);
   top: 50%;
   transform: translateY(-50%);
 }

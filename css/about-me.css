@@ -126,11 +126,6 @@
   padding-bottom: 10px;
 }
 
-/* @media screen and (max-width: 375px) {
-  .about-img {
-    height: auto;
-  }
-} */
 @media (min-width: 540px) and (max-width: 767px) {
   .intro-box {
     padding: 56px 56px 0 56px;

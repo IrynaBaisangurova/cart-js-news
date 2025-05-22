@@ -77,16 +77,6 @@
   text-align: center;
 }
 
- /* @media (min-width: 377px) and  (max-width: 767px) {
-  .sub-buy .subtitle-buy {
-    width: 188px;
-    padding: 0;
-  }
-  .sub-buy {
-    width: 75%;
-    padding-left: 62px;
-  }
-}  */
 @media (min-width: 540px) and (max-width: 767px) {
   .sub-buy .subtitle-buy {
     width: 236px;
@@ -120,7 +110,6 @@
    font-size: 28px;
   }
   /* #endregion action */
- 
   
 }
 
